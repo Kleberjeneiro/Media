@@ -27,21 +27,21 @@
                     $nota1 = $_POST["nota1"];
                     $nota2 = $_POST["nota2"];
                     $nota3 = $_POST["nota3"];
-                    $nota4 = $_POST["notaf"];
+                    $nota4 = $_POST["nota4"];
 
                     
 
                     switch ($Escolha) {
                         case 'Biologia':
                             
-                            $media = 15;
+                            $media = 20;
                             $resul = ($nota1 + $nota2 + $nota3 + $nota4) / 4;
 
                             if ( $resul >= $media) {
 
                                 echo "Parabéns você foi Aprovado em Biologia: nota $resul";
 
-                            } elseif ($resul < $media) {
+                            } else {
 
                                 echo "Você está de recuperação em Biologia: nota = $resul";
                             }
@@ -49,31 +49,30 @@
                             case 'Filosofia':
                             
                                 $media = 20;
-                                $media_recuperacao = 15;
                                 $resul = ($nota1 + $nota2 + $nota3 + $nota4) / 4;
         
-                                if ( $resul > $media || $resul <= $media) {
+                                if ( $resul >= $media) {
         
-                                    echo "Parabéns você foi Aprovado em Filosofia: resul";
+                                    echo "Parabéns você foi Aprovado em Filosofia: $resul";
         
-                                } elseif ($resul < $media || $resul = $media_recuperacao) {
+                                } else {
         
-                                    echo "Você está de recuperação em : $resul";
+                                    echo "Você está de recuperação em Filosofia: $resul";
                                 } 
                                 
                                 break;
                                 case 'Geografia':
                             
-                                    $media = 15;
+                                    $media = 20;
                                     $resul = ($nota1 + $nota2 + $nota3 + $nota4) / 4;
             
                                     if ( $resul >= $media) {
             
-                                        echo "Parabéns você foi Aprovado em Geografia";
+                                        echo "Parabéns você foi Aprovado em Geografia : $resul";
             
-                                    } elseif ($resul < $media) {
+                                    } else {
             
-                                        echo "Você está de recuperação";
+                                        echo "Você está de recuperação em Geografia : $resul";
                                     }
                                     break;
                                 case 'História':
@@ -83,13 +82,83 @@
             
                                     if ( $resul >= $media) {
             
-                                        echo "Parabéns você foi Aprovado em História";
+                                        echo "Parabéns você foi Aprovado em História : $resul";
             
-                                    } elseif ($resul < $media) {
+                                    } else {
             
-                                        echo "Você está de recuperação";
+                                        echo "Você está de recuperação em História : $resul";
                                     }
                                     break;
+                                    case 'Língua Inglesa':
+                                    
+                                        $media = 30;
+                                        $resul = ($nota1 + $nota2 + $nota3 + $nota4) / 4;
+                
+                                        if ( $resul >= $media) {
+                
+                                            echo "Parabéns você foi Aprovado em Língua Inglesa: $resul";
+                
+                                        } else {
+                
+                                            echo "Você está de recuperação em Língua Inglesa : $resul";
+                                        }
+                                        break;
+                                        case 'Língua Portuguesa':
+                                    
+                                            $media = 40;
+                                            $resul = ($nota1 + $nota2 + $nota3 + $nota4) / 4;
+                    
+                                            if ( $resul >= $media) {
+                    
+                                                echo "Parabéns você foi Aprovado em Língua Portuguesa : $resul";
+                    
+                                            } else {
+                    
+                                                echo "Você está de recuperação em Língua Portuguesa : $resul";
+                                            }
+                                            break;   
+                                            case 'Matemática':
+                                    
+                                                $media = 40;
+                                                $resul = ($nota1 + $nota2 + $nota3 + $nota4) / 4;
+                        
+                                                if ( $resul >= $media) {
+                        
+                                                    echo "Parabéns você foi Aprovado em Matemática : $resul";
+                        
+                                                } else {
+                        
+                                                    echo "Você está de recuperação em Matemática : $resul";
+                                                }
+                                                break;
+                                                case 'Química':
+                                    
+                                                    $media = 35;
+                                                    $resul = ($nota1 + $nota2 + $nota3 + $nota4) / 4;
+                            
+                                                    if ( $resul >= $media) {
+                            
+                                                        echo "Parabéns você foi Aprovado em Química : $resul";
+                            
+                                                    } else {
+                            
+                                                        echo "Você está de recuperação em Química : $resul";
+                                                    }
+                                                    break;
+                                                    case 'Sociologia':
+                                    
+                                                        $media = 30;
+                                                        $resul = ($nota1 + $nota2 + $nota3 + $nota4) / 4;
+                                
+                                                        if ( $resul >= $media) {
+                                
+                                                            echo "Parabéns você foi Aprovado em Sociologia : $resul";
+                                
+                                                        } else {
+                                
+                                                            echo "Você está de recuperação em Sociologia : $resul";
+                                                        }
+                                                        break;                 
                         default:
                             # code...
                         break;
@@ -107,4 +176,6 @@
     </body>
 
 </html>
+
+
 
