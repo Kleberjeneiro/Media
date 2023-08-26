@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="style-index.css">
+        <title>Aplicativo Média</title>
+    </head>
+    
+
+    <body>
+
+
+        <fieldset>
+            <legend>Média - Escolha a Matéria</legend>
+                <div class="container">
+                    <h1></h1>
+
+                    <form action="calculo.php" method="post">
+                        
+                    <label for="Escolha">Escolha a Matéria</label><br>
+                    <select name = "Escolha">
+                            <option>Biologia</option>
+                            <option>Filosofia</option>
+                            <option>Geografia</option>
+                            <option>História</option>
+                            <option>Língua Inglesa</option>
+                            <option>Língua Portuguesa</option>
+                            <option>Matemática</option>
+                            <option>Química</option>
+                            <option>Sociologia</option>
+                            
+                    </select> <br>
+
+                        <label for="nota1">Nota - 1 </label>
+                        <input type="text" id="nota1" name="nota1" placeholder="Inserir Nota" required>
+
+                        <label for="nota2">Nota - 2 </label>
+                        <input type="text" id="nota2" name="nota2" placeholder="Inserir Nota" required>
+
+                        <label for="nota3">Nota - 3 </label>
+                        <input type="text" id="nota3" name="nota3" placeholder="Inserir Nota" required>
+
+                        <label for="nota4">Nota - 4</label>
+                        <input type="text" id="notaf" name="notaf" placeholder="Inserir Nota" required>
+                
+                        <input type="submit" value="Calcular">
+
+                    </form>
+                </div>
+        </fieldset> 
+        
+
+    </body>
+
+</html>
